@@ -3,7 +3,7 @@ import React from 'react';
 import Events from './Events'
 import Contact from './Contact';
 
-import churchImage from '../Assets/churchimg.jpeg'
+import churchImage from '../Assets/church3.png'
 import groto from '../Assets/groto.jpeg'
 
 const HomePage = () => (
@@ -20,16 +20,11 @@ const HomePage = () => (
       </div>
    </div>
    
-   {/* <section>
    <img
       src={churchImage}
       alt="Church"
       style={{ maxHeight: '100px', width: 'auto', marginRight: '15px' }} // Adjust maxHeight and marginRight as needed
       />
-   </section>
-    <div className="container">
- 
-  </div> */}
   <Events />
   <Contact />
   </main>
