@@ -1,49 +1,50 @@
 import React from 'react';
+import Table2 from './Table2';
+import '../Style/Table.css'; // Import the CSS file
 
-const Table = () =>{const schedule = [
-  { date: '29-08-2024', day: 'Thursday', celebrant: 'Fr. V. Louis', theme: 'MARY: Mother of Humanity', language: 'English' },
-  { date: '30-08-2024', day: 'Friday', celebrant: 'Fr. Anthony Paul', theme: 'MARY: Queen of the Apostles', language: 'Tamil' },
-  { date: '31-08-2024', day: 'Saturday', celebrant: 'Fr. Julian Misquitta', theme: 'MARY: Queen of Confessors', language: 'Marathi' },
-  { date: '01-09-2024', day: 'Sunday', celebrant: 'Fr. S. Dhiruviyam', theme: 'MARY: Queen of Martyrs', language: 'English' },
-  { date: '02-09-2024', day: 'Monday', celebrant: 'Fr. Jenson Poruthur', theme: 'MARY: Queen of Patriarchs', language: 'Malayalam (Syro-Malabar)' },
-  { date: '03-09-2024', day: 'Tuesday', celebrant: 'Fr. Lui Heredia', theme: 'MARY: Queen of Migrants', language: 'Konkani' },
-  { date: '04-09-2024', day: 'Wednesday', celebrant: 'Fr. Shaji Vazhayll', theme: 'MARY: Queen of Virgins', language: 'Malayalam (Syro-Malankara)' },
-  { date: '05-09-2024', day: 'Thursday', celebrant: 'Fr. Godvyn Saldanha', theme: 'MARY: Queen of Prophets', language: 'English' },
-  { date: '06-09-2024', day: 'Friday', celebrant: 'Fr. Denis Joseph', theme: 'MARY: Queen of the Family', language: 'Hindi' },
-  { date: '07-09-2024', day: 'Saturday', celebrant: 'Fr. V. Louis', theme: 'MARY: Queen of Saints', language: 'Tamil' },
-  { date: '08-09-2024', day: 'Sunday', celebrant: 'Bishop John Rodrigues', theme: 'MARY: Queen of Peace', language: 'English' },
-];
+const Table = () => {
+  const schedule = [
+    { date: '04-09-2024', day: 'Wednesday', celebrant: 'Ra. Rev. Dr. Bishop Lourdes Daniel', theme: 'Flag Hoisting, Inauguration Ceremony', Planner: 'Palkiya Samiti' },
+    { date: '05-09-2024', day: 'Thursday', celebrant: 'Ra. Rev. Dr. Bishop Ambrose Rebello', theme: 'Mother of Redemption', Planner: 'Bal Yesu Vibhag' },
+    { date: '06-09-2024', day: 'Friday', celebrant: 'Rev. Fr. Anand Gaikwad (Pune Diocese)', theme: 'Mary, Refuge of Sinners', Planner: 'Palkiya Samiti' },
+    { date: '07-09-2024', day: 'Saturday', celebrant: 'Rev. Fr. Prakash Bhalerao (Shrirampur)', theme: 'Mary, Blessed Mother', Planner: 'St. Anthony Vibhag' },
+    { date: '08-09-2024', day: 'Sunday', celebrant: 'Ra. Rev. Fr. Dr. Bishop Lancy Pinto', theme: 'Birth of Mary', Planner: 'St. Luke Vibhag' },
+    { date: '09-09-2024', day: 'Monday', celebrant: 'Rev. Fr. Ajay D Monte (Ahmednagar)', theme: 'Immaculate Conception of Mary', Planner: 'Mother Mary Vibhag' },
+    { date: '10-09-2024', day: 'Tuesday', celebrant: 'Rev. Fr. Akshay Adhav (Nevasa)', theme: 'Mary, Dispenser of Graces', Planner: 'St. Teresa Vibhag' },
+    { date: '11-09-2024', day: 'Wednesday', celebrant: 'Rev. Fr. Sanjay Parkhe (Ch. Sambhajinagar)', theme: 'Mary, Comforter of the Afflicted', Planner: 'St. Anna, St. Mary, St. Mark' },
+    { date: '12-09-2024', day: 'Thursday', celebrant: 'Rev. Fr. Ignatius Kshirsagar (Ch. Sambhajinagar)', theme: 'Mary, Mother of the World', Planner: 'St. Joseph Vibhag' },
+    { date: '13-09-2024', day: 'Friday', celebrant: 'Rev. Fr. Pramod Makasare (Nashik Road)', theme: 'Mary, Gate of Heaven', Planner: 'Pragati Nagar' },
+  ];
 
-return (
-  <div className='container'>
-    <h1>Annual Vailankanni Novena - 2024</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Day</th>
-          <th>Celebrant</th>
-          <th>Theme</th>
-          <th>Language</th>
-        </tr>
-      </thead>
-      <tbody>
-        {schedule.map((item, index) => (
-          <tr key={index}>
-            <td data-label="Date">{item.date}</td>
-            <td data-label="Day">{item.day}</td>
-            <td data-label="Celebrant">{item.celebrant}</td>
-            <td data-label="Theme">{item.theme}</td>
-            <td data-label="Language">{item.language}</td>
+  return (
+    <div className='container'>
+      <h1>Harigaon Matmauli Novena - 2024</h1>
+      <h4>Note: all Masses are in Marathi</h4>
+      <table className="styled-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Celebrant</th>
+            <th>Theme</th>
+            <th>Planner</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-);
+        </thead>
+        <tbody>
+          {schedule.map((item, index) => (
+            <tr key={index}>
+              <td data-label="Date">{item.date}</td>
+              <td data-label="Day">{item.day}</td>
+              <td data-label="Celebrant">{item.celebrant}</td>
+              <td data-label="Theme">{item.theme}</td>
+              <td data-label="Planner">{item.Planner}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <Table2></Table2>
+    </div>
+  );
 }
-
-
-
 
 export default Table;

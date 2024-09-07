@@ -13,10 +13,9 @@ const AboutUs = () => {
       </section>
       
       <section className='history'>
-        <h2>Our History</h2>
+        <h2>intro</h2>
         <p>
-          Founded in [Year], our church has been a cornerstone of the community, offering a place for worship, fellowship, and support. Over the years, we have grown and evolved, always staying true to our core values of service, love, and faith.
-        </p>
+        Haregaon is the sacred place of Mat Mauli Shrine and the annual Yatra held in her honour every September. The name is associated with the Shrine of Mount Mary in Bandra, Mumbai where the original veneration of Mary has been held for her Birthday on 8th September, accompanied by a famous fair and entertainment. ‘Mat’ is a corruption of ‘Mount’ and Mary is lovingly referred to as Mauli, the Mother.  </p>
       </section>
 
       <section className='staff'>

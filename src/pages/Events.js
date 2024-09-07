@@ -11,7 +11,7 @@ const Events = () => (
       className="img-fluid"
     />
   <div className="title">
-<h1 className="event-title">हरेगाव यात्रा महोत्सव</h1>
+<h1 className="event-title">७६ वा हरेगाव यात्रा महोत्सव</h1>
 </div>
     <div className="text-overlay">
      
