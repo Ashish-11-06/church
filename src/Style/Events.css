@@ -1,4 +1,95 @@
-.custom-background {
-    background-color: #46a2f2; /* Light blue color, adjust as needed */
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .position-relative {
+    position: relative;
+    width: 100%; /* Ensure it takes up the full width */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 10%; /* Position text near the bottom */
+    left: 5%; /* Position text from the left */
+    width: 90%; /* Adjust width to fit text within image */
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for readability */
+    border-radius: 10px; /* Optional: rounds the corners of the text background */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  /* Responsive text sizes */
+  .event-title {
+    font-size: 2.5rem; /* Default size */
+    margin-bottom: 10px;
+  }
+  
+  .event-subtitle {
+    font-size: 1.5rem; /* Default size */
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    font-size: 1rem; /* Default size */
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    font-size: 1.25rem; /* Default size */
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (max-width: 768px) {
+    .text-overlay {
+      bottom: 5%; /* Adjust position for smaller screens */
+      left: 2%; /* Adjust position for smaller screens */
+      width: 96%; /* Increase width for smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+    
+    .event-title {
+      font-size: 2rem; /* Adjust size for smaller screens */
+    }
+    
+    .event-subtitle {
+      font-size: 1.25rem; /* Adjust size for smaller screens */
+    }
+    
+    .event-description {
+      font-size: 0.9rem; /* Adjust size for smaller screens */
+    }
+    
+    .event-date {
+      font-size: 1rem; /* Adjust size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-overlay {
+      bottom: 2%; /* Further adjust position for very small screens */
+      left: 1%; /* Further adjust position for very small screens */
+      width: 98%; /* Maximize width for very small screens */
+      padding: 10px; /* Further reduce padding for very small screens */
+    }
+    
+    .event-title {
+      font-size: 1.75rem; /* Further adjust size for very small screens */
+    }
+    
+    .event-subtitle {
+      font-size: 1rem; /* Further adjust size for very small screens */
+    }
+    
+    .event-description {
+      font-size: 0.8rem; /* Further adjust size for very small screens */
+    }
+    
+    .event-date {
+      font-size: 0.9rem; /* Further adjust size for very small screens */
+    }
   }
   
