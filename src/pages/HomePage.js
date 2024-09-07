@@ -1,8 +1,7 @@
 import '../Style/Home.css';
 import React from 'react';
 import Events from './Events';
-import Contact from './Contact';
-
+import Contact from './Schedule';
 import churchImage from '../Assets/church3.png';
 
 const HomePage = () => (
@@ -23,7 +22,8 @@ const HomePage = () => (
   
     
     <Events />
-    <Contact />
+    
+   
   </main>
 );
 

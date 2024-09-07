@@ -1,0 +1,65 @@
+/* Timetable.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+  }
+  
+  th, td {
+    border: 1px solid black; /* Black border */
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    table {
+      width: 100%; /* Table width remains 100% */
+    }
+  
+    th, td {
+      padding: 6px; /* Reduced padding for mobile */
+      font-size: 12px; /* Reduced font size for mobile */
+    }
+  
+    /* Compress table to fit small screens */
+    tr {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    td {
+      display: block;
+      text-align: left;
+      width: 100%; /* Full width for each cell */
+      box-sizing: border-box;
+      position: relative;
+      padding: 6px; /* Adjust padding for smaller screens */
+      border-bottom: 1px solid black; /* Add bottom border for each cell */
+      font-size: 12px; /* Reduce font size for mobile */
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 40%; /* Adjust width of label */
+      padding-right: 5px; /* Adjust padding for labels */
+      white-space: nowrap;
+      font-weight: bold;
+      background: #f4f4f4; /* Background color for labels */
+      border-right: 1px solid black; /* Border to separate label from value */
+      top: 0;
+      text-align: left;
+      box-sizing: border-box;
+      font-size: 12px; /* Reduce font size for labels on mobile */
+    }
+  }
+  

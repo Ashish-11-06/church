@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import Events from './pages/Events';
-import Contact from './pages/Contact';
+import Contact from './pages/Schedule';
 import Navigation from './components/Navbar';
+import Table from './pages/Table';
 
 const App = () => (
   <Router>
@@ -14,6 +15,7 @@ const App = () => (
       <Route path="/" element={<HomePage />} />
       <Route path="/events" element={<Events />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/table" element={<Table />} />
     </Routes>
     <Footer />
   </Router>
