@@ -8,18 +8,22 @@ const Table2 = () => {
     { time: '12:00 PM', event: 'Holy Mass', celebrant: 'Rev. Fr. Alwin K.', From: 'Kendal Khurd' },
     { time: '01:00 PM', event: 'Holy Mass', celebrant: 'Rev. Fr. Neville Fernandes', From: 'Panodi' },
     { time: '02:00 PM', event: 'Holy Mass', celebrant: 'Rev. Fr. Wilson Rumao', From: 'Songav' },
+    { time: '07:00 PM', event: 'Prayer For Health', celebrant: 'Rev. Fr. Nelsan Parera', From: 'Ghulewadi' },
+    { time: '09:00 PM', event: 'Bhajan Sandhya', celebrant: 'Harigaon Bhajan Group', From: 'Harigaon' },
+    { time: '12:00 AM', event: 'Holy Mass', celebrant: 'Rev. Fr. Mukti Prasad', From: 'Ashoknagar' },
   ];
 
   return (
     <div className='container'>
       <h1>14 Sept 2024 Masses:</h1>
+      <h2>Note: </h2>
       <table className="styled-table">
         <thead>
           <tr>
             <th>Time</th>
             <th>Event</th>
             <th>Celebrant</th>
-            <th>Location</th>
+            <th>From</th>
           </tr>
         </thead>
         <tbody>
