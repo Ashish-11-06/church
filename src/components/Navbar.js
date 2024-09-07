@@ -1,31 +1,47 @@
-// import '../Style/Navbar.css'
+import React, { useState } from 'react';
+import '../Style/Navbar.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleLinkClick = () => {
+    // Collapse the navbar
+    setExpanded(false);
+  };
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar expanded={expanded} collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand>
-          <Link className="nav-link" to="/">St. Teresa Church Harigaon</Link>
+          <Link className="nav-link" to="/" onClick={handleLinkClick}>St. Teresa Church Harigaon</Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle 
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setExpanded(!expanded)} // Toggle the navbar
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-              <Link className="nav-link" to="/events">Events</Link>
+              <Link className="nav-link" to="/" onClick={handleLinkClick}>Home</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="nav-link" to="/table">Timetable</Link>
+              <Link className="nav-link" to="/events" onClick={handleLinkClick}>Events</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/table" onClick={handleLinkClick}>Timetable</Link>
             </Nav.Link>
-              </Nav>
+            <Nav.Link>
+              <Link className="nav-link" to="/aboutUs" onClick={handleLinkClick}>About Us</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="nav-link" to="/contact" onClick={handleLinkClick}>Contact</Link>
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

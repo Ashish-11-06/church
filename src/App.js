@@ -7,6 +7,7 @@ import Events from './pages/Events';
 import Contact from './pages/Schedule';
 import Navigation from './components/Navbar';
 import Table from './pages/Table';
+import AboutUs from './pages/AboutUs';
 
 const App = () => (
   <Router>
@@ -16,6 +17,7 @@ const App = () => (
       <Route path="/events" element={<Events />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/table" element={<Table />} />
+      <Route path="/aboutUs" element={<AboutUs />} />
     </Routes>
     <Footer />
   </Router>
