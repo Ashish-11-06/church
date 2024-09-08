@@ -7,6 +7,9 @@ import Head2 from '../components/Head2'
 
 const HomePage = () => (
   <main className='home'>
+     <div className="marquee">
+      <p>Festival is on 14 September 2024.    सण १४ सप्टेंबर २०२४ रोजी आहे</p>
+    </div>
     <div className="text-white p-2 d-flex align-items-center">
       <img
         src={churchImage}
@@ -18,9 +21,7 @@ const HomePage = () => (
         <p>जो माझ्या पुत्राचा सन्मान करील, त्यांच्या ईच्छा मी पूर्ण करील.</p>
       </div>
     </div>
-    <div className="marquee">
-      <p>Festival is on 14 September 2024.    सण १४ सप्टेंबर २०२४ रोजी आहे</p>
-    </div>
+   
    
 
 <Head2></Head2>

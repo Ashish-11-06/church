@@ -18,17 +18,17 @@ const AboutUs = () => {
         Haregaon is the sacred place of Mat Mauli Shrine and the annual Yatra held in her honour every September. The name is associated with the Shrine of Mount Mary in Bandra, Mumbai where the original veneration of Mary has been held for her Birthday on 8th September, accompanied by a famous fair and entertainment. ‘Mat’ is a corruption of ‘Mount’ and Mary is lovingly referred to as Mauli, the Mother.  </p>
       </section>
 
-      <section className='staff'>
-        <h2>Meet Our Community 2024</h2>
+      {/* <section className='staff'>
+        <h2>Meet Our Community 2024</h2> */}
          
 
-        <ul>
+        {/* <ul>
           <li><strong> Fr. Dominic Rosario</strong> - Parish Priest -</li>
           <li><strong>Fr. Santan Rodrigues </strong> - Assistant -</li>
           <li><strong> Fr. Francis Ohol</strong> - Principal -</li>
           <li><strong>Br. Maxwell Kharja</strong> - Hostel incharge -</li>
         </ul>
-      </section>
+      </section> */}
 
       {/* <section className='services'>
         <h2>Our Services</h2>

@@ -15,7 +15,7 @@ function Navigation() {
   };
 
   return (
-    <Navbar expanded={expanded} collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar expanded={expanded} collapseOnSelect expand="lg" className="body-tertiary navbar-custom">
       <Container>
         <Navbar.Brand>
           <Link className="nav-link" to="/" onClick={handleLinkClick}>St. Teresa Church Harigaon</Link>

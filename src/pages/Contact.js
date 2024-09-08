@@ -1,13 +1,14 @@
 import React from 'react';
+import '../Style/Contact.css'
 
 const ContactUs = () => {
   return (
-    <div style={{ display: 'flex', padding: '20px', backgroundColor: '#fdf7e2' }}>
+    <div className='contact' style={{ display: 'flex', padding: '20px' }}>
       <div style={{ flex: 1, marginRight: '20px' }}>
         <h2 style={{ color: '#800000', marginBottom: '10px' }}>Contact us</h2>
-        <p style={{ fontWeight: 'bold' }}>St. Teresa Church Parish Priest</p>
+        <p style={{ fontWeight: 'bold' }}>St. Teresa church Harigaon</p>
         <section className='staff'>
-        <h2>Meet Our Community 2024</h2>
+        <h2>Our Community 2024</h2>
          
 
         <ul>

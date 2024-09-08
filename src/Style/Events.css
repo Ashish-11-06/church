@@ -43,7 +43,7 @@
   color: white;
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.284);
   border-radius: 10px;
   box-sizing: border-box;
   z-index: 2; /* Ensures text is above the blur */

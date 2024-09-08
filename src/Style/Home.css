@@ -1,5 +1,5 @@
 .home {
-  background-color: #acd7fd54; /* Light blue color, adjust as needed */
+  background-color: rgba(117, 166, 181, 0.668) ;
 }
 
 .youtube-channel, .youtube-video {
@@ -24,6 +24,7 @@
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
+  background-color: rgb(150, 232, 247);
 }
 
 .marquee p {
@@ -31,6 +32,7 @@
   padding-left: 100%;
   animation: marquee 10s linear infinite;
   margin: 0; /* Removes default paragraph margins */
+  color: rgba(80, 0, 0, 0.716);
 }
 
 @keyframes marquee {
