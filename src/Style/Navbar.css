@@ -1,6 +1,6 @@
 /* Sticky Navbar at the top */
 .navbar-custom {
-  background-color: #f8f9fa; /* Neutral background color */
+  background-color: #88c0f9a2; /* Neutral background color */
   position: sticky; /* Ensures the navbar sticks to the top */
   top: 0; /* Positions the navbar at the top */
   width: 100%; /* Ensures the navbar spans the full width */
