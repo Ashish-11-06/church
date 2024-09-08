@@ -8,8 +8,7 @@ const QuoteSection = () => {
      
      
 <blockquote className="quote-text">
-      "Holy Mary, Mother of God,
-pray for us sinners, now and at the hour of our death. Amen."      </blockquote>
+"Let us run to Mary and as her little children cast ourselves into her arms with a perfect confidence."    </blockquote>
 
  {/* <blockquote className="quote-text">
       "Hail Mary, full of grace, the Lord is with thee;
