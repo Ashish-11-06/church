@@ -1,0 +1,43 @@
+/* Container for the social media sections */
+.social-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the items */
+    align-items: stretch; /* Ensures all items are the same height */
+    gap: 20px; /* Adjusts the gap between the columns */
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  /* Each social media item */
+  .social-item {
+    flex: 1 1 45%; /* Each item takes approximately 45% of the width */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Optional: Add background color */
+    border-radius: 8px; /* Optional: Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for styling */
+    min-width: 300px; /* Set a minimum width to keep content readable */
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Distribute space evenly within the box */
+    height: 100%; /* Ensure items stretch to match the tallest item */
+  }
+  
+  /* Ensure buttons are styled correctly */
+  .social-item .btn {
+    margin-top: auto; /* Pushes button to the bottom */
+    padding: 10px 20px; /* Ensure consistent padding for buttons */
+  }
+  
+  /* Responsive Adjustments for Smaller Screens */
+  @media (max-width: 768px) {
+    .social-container {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+  
+    .social-item {
+      flex: 1 1 100%; /* Makes each item take full width on smaller screens */
+    }
+  }
+  

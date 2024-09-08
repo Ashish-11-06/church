@@ -1,9 +1,10 @@
 import React from 'react';
 import '../Style/Events.css'; // Adjust the path as needed
-
+import Temp from '../Assets/temp.jpg'
 import ChurchImg from '../Assets/churchimg.jpeg';
 
 const Events = () => (
+  <main>
   <div className="position-relative">
     <img
       src={ChurchImg}
@@ -19,7 +20,14 @@ const Events = () => (
       <p className="event-description">पवित्र निष्कलंक मारियामतेचा सण</p>
       <h3 className="event-date">14 Sept 2024</h3>
     </div>
+   
   </div>
+   <img
+      src={Temp}
+      alt="Groto"
+      className="img-fluid"
+    />
+  </main>
 );
 
 export default Events;

@@ -3,11 +3,12 @@ import '../Style/Home.css';
 import Events from './Events';
 import churchImage from '../Assets/church3.png';
 import ContactUs from './Contact';
-import Head2 from '../components/Head2'
+import Head2 from '../components/Head2';
+import Social from '../components/Social';
 
 const HomePage = () => (
   <main className='home'>
-     <div className="marquee">
+    <div className="marquee">
       <p>Festival is on 14 September 2024.    सण १४ सप्टेंबर २०२४ रोजी आहे</p>
     </div>
     <div className="text-white p-2 d-flex align-items-center">
@@ -21,28 +22,13 @@ const HomePage = () => (
         <p>जो माझ्या पुत्राचा सन्मान करील, त्यांच्या ईच्छा मी पूर्ण करील.</p>
       </div>
     </div>
-   
-   
 
-<Head2></Head2>
+    <Head2 />
 
-<Events />
+    <Events />
 
-    {/* YouTube Channel Section */}
-    <div className="youtube-channel my-3 text-center">
-      <h3>Visit Our YouTube Channel</h3>
-      <p>Subscribe to our channel to watch all live events and stay updated with our latest content!</p>
-      <a
-        href="https://www.youtube.com/@DominicRosario-lj8nd" // Replace with your actual YouTube channel URL
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-primary"
-      >
-        Watch on YouTube
-      </a>
-    </div>
-
-    <ContactUs></ContactUs>
+<Social/>
+    <ContactUs />
   </main>
 );
 

@@ -43,3 +43,20 @@
     transform: translateX(-100%);
   }
 }
+
+.instagram-channel {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.instagram-channel .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4405f; /* Instagram color */
+}
+
+.instagram-channel .btn:hover {
+  background-color: #c13584; /* Instagram hover color */
+}

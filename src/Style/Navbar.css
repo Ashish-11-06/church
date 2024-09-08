@@ -3,3 +3,26 @@
   }
 
 
+  .navbar-custom {
+    background-color: #f8f9fa; /* Example background color */
+  }
+  
+  .nav-link {
+    color: #000; /* Example text color */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Example hover color */
+  }
+  
+  body-tertiary {
+    /* Custom styles for body-tertiary class */
+  }
+  
+  /* Optional: Ensure that container and navbar items adjust correctly on smaller screens */
+  @media (max-width: 767.98px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+  

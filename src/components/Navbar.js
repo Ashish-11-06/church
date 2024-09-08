@@ -25,7 +25,7 @@ function Navigation() {
           onClick={() => setExpanded(!expanded)} // Toggle the navbar
         />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ml-auto">
             <Nav.Link>
               <Link className="nav-link" to="/" onClick={handleLinkClick}>Home</Link>
             </Nav.Link>
