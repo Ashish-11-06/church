@@ -24,7 +24,7 @@ const Social = () => (
         <h3>Follow Us on Instagram</h3>
         <p>Stay updated with our latest photos and stories!</p>
         <a
-          href="https://www.instagram.com/your_instagram_handle" // Replace with your actual Instagram URL
+          href="https://www.instagram.com/st_theresachurch_haregaon" // Replace with your actual Instagram URL
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary d-flex align-items-center justify-content-center"
