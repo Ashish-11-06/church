@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Style/AboutUs.css'; // Import a CSS file for styling
-
+import Contact from './Contact'
 const AboutUs = () => {
   return (
     <div className='about-us'>
@@ -19,35 +19,29 @@ const AboutUs = () => {
       </section>
 
       <section className='staff'>
-        <h2>Meet Our Staff</h2>
+        <h2>Meet Our Community 2024</h2>
+         
+
         <ul>
-          <li><strong>Fr. John Doe</strong> - Senior Pastor</li>
-          <li><strong>Fr. Jane Smith</strong> - Associate Pastor</li>
-          <li><strong>Mrs. Emily Johnson</strong> - Director of Music</li>
-          <li><strong>Mr. Michael Brown</strong> - Youth Minister</li>
+          <li><strong> Fr. Dominic Rosario</strong> - Parish Priest -</li>
+          <li><strong>Fr. Santan Rodrigues </strong> - Assistant -</li>
+          <li><strong> Fr. Francis Ohol</strong> - Principal -</li>
+          <li><strong>Br. Maxwell Kharja</strong> - Hostel incharge -</li>
         </ul>
       </section>
 
-      <section className='services'>
+      {/* <section className='services'>
         <h2>Our Services</h2>
         <ul>
           <li>Sundays: 9:00 AM - Worship Service</li>
           <li>Wednesdays: 7:00 PM - Bible Study</li>
           <li>Saturdays: 10:00 AM - Community Outreach</li>
         </ul>
-      </section>
+      </section> */}
 
       <section className='contact'>
-        <h2>Contact Us</h2>
-        <p>
-          <strong>Address:</strong> 123 Church Street, City, State, ZIP
-        </p>
-        <p>
-          <strong>Phone:</strong> (123) 456-7890
-        </p>
-        <p>
-          <strong>Email:</strong> info@ourchurch.org
-        </p>
+       <Contact></Contact>
+       
       </section>
     </div>
   );

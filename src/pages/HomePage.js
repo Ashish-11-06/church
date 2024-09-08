@@ -22,6 +22,7 @@ const HomePage = () => (
     
     <Events />
     
+    
    
   </main>
 );
