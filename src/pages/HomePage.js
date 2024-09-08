@@ -3,6 +3,7 @@ import '../Style/Home.css';
 import Events from './Events';
 import churchImage from '../Assets/church3.png';
 import ContactUs from './Contact';
+import Head2 from '../components/Head2'
 
 const HomePage = () => (
   <main className='home'>
@@ -18,11 +19,14 @@ const HomePage = () => (
       </div>
     </div>
     <div className="marquee">
-      <p>Festival is on 14 September 2024</p>
+      <p>Festival is on 14 September 2024.    सण १४ सप्टेंबर २०२४ रोजी आहे</p>
     </div>
-    <div className="marquee">
-      <p>सण १४ सप्टेंबर २०२४ रोजी आहे</p>
-    </div>
+   
+
+<Head2></Head2>
+
+<Events />
+
     {/* YouTube Channel Section */}
     <div className="youtube-channel my-3 text-center">
       <h3>Visit Our YouTube Channel</h3>
@@ -37,7 +41,6 @@ const HomePage = () => (
       </a>
     </div>
 
-    <Events />
     <ContactUs></ContactUs>
   </main>
 );

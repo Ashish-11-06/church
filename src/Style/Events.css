@@ -5,6 +5,8 @@
   max-width: 100%;
   height: auto;
   overflow: hidden; /* Ensures no overflow */
+  padding: 20px; /* Adds padding around the container */
+  box-sizing: border-box; /* Ensures padding is included in the total width/height */
 }
 
 /* Blurred Background Image */
@@ -13,13 +15,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 40px); /* Adjusted to account for padding */
+  height: calc(100% - 40px); /* Adjusted to account for padding */
   background-image: url('../Assets/groto.jpeg'); /* Use the same image as background */
   background-size: cover; /* Ensures the image covers the container */
   background-position: center; /* Centers the background image */
   filter: blur(2px); /* Applies blur effect */
   z-index: 1; /* Places the blur layer beneath the content */
+  margin: 20px; /* Matches padding to align properly */
 }
 
 /* Main Image */
@@ -30,6 +33,7 @@
   object-fit: cover;
   max-height: 500px; /* Optional: limit height */
   visibility: hidden; /* Hide the image as it's used in the blur */
+  padding: 20px; /* Add padding to the image */
 }
 
 /* Text Overlay Styles */
