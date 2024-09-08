@@ -8,6 +8,7 @@
   padding: 20px; /* Adds padding around the container */
   box-sizing: border-box; /* Ensures padding is included in the total width/height */
   margin-bottom: 20px; /* Adds space below the first image */
+  background-color: rgba(150, 233, 247, 0.829);
 }
 
 /* Blurred Background Image */
@@ -28,7 +29,7 @@
 /* Main Image */
 .church-img {
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto; /* Ensures the aspect ratio is maintained */
   object-fit: cover;
   max-height: 500px; /* Optional: limit height */
@@ -41,7 +42,7 @@
   width: 100%;
   height: auto;
   max-height: none; /* Remove height limitation for this image */
-  padding: 0; /* Remove padding if needed */
+  padding: 10px; /* Remove padding if needed */
   margin-top: 20px; /* Adds space above the second image */
 }
 
@@ -135,6 +136,7 @@
 
   .church-img {
     display: block;
-    visibility: visible; /* Ensure the main image is visible */
+    visibility: visible;
+    padding: auto; /* Ensure the main image is visible */
   }
 }

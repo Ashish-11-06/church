@@ -2,8 +2,8 @@ import React from 'react';
 import '../Style/Events.css'; // Adjust the path as needed
 import Temp from '../Assets/temp.jpg';
 import ChurchImg from '../Assets/churchimg.jpeg';
-import Temp1 from '../Assets/Temp1.jpg';
-import Temp2 from '../Assets/temp2.jpg'
+// import Temp1 from '../Assets/Temp1.jpg';
+// import Temp2 from '../Assets/temp2.jpg'
 
 const Events = () => (
   <main>

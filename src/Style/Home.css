@@ -1,5 +1,9 @@
 .home {
-  background-color: rgba(117, 166, 181, 0.668) ;
+  background-color: rgba(196, 246, 255, 0.829);
+}
+
+.text2{
+  color: rgba(34, 60, 53, 0.829);
 }
 
 .youtube-channel, .youtube-video {

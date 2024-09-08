@@ -20,9 +20,9 @@ const HomePage = () => (
     alt="Church"
     style={{ maxHeight: '100px', width: 'auto', marginRight: '15px' }}
   />
-  <div className="text-white d-flex flex-column align-items-center">
+  <div className="d-flex flex-column align-items-center">
     <h2 className="mb-2">St. Teresa Church Harigaon</h2>
-    <p className="text-center">"जे माझा सन्मान करतील, त्यांच्या ईच्छा मी पूर्ण करीन."</p>
+    <p className="text-center text2">"जे माझा सन्मान करतील, त्यांच्या ईच्छा मी पूर्ण करीन."</p>
   </div>
 </div>
 

@@ -6,7 +6,7 @@ const Social = () => (
   <section className='social'>
     <div className="social-container">
       {/* YouTube Channel Section */}
-      <div className="social-item youtube-channel text-center">
+      <div className="social-item youtube-channel text-center bgg">
         <h3>Visit Our YouTube Channel</h3>
         <p>Subscribe to our channel to watch all live events and stay updated with our latest content!</p>
         <a
@@ -20,7 +20,7 @@ const Social = () => (
       </div>
 
       {/* Instagram Section */}
-      <div className="social-item instagram-channel text-center">
+      <div className="social-item instagram-channel text-center bgg">
         <h3>Follow Us on Instagram</h3>
         <p>Stay updated with our latest photos and stories!</p>
         <a
