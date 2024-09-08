@@ -1,9 +1,13 @@
 import React from 'react';
+import '../Style/Footer.css'
 
 const Footer = () => (
-  <footer className="bg-dark text-white text-center p-3">
-    <p>&copy; 2024 Church Name. All rights reserved.</p>
+  <footer className="bg-dark text-white text-center p-1">
+    <p>&copy; 2024 Saint Teresa Church Harigaon. All rights reserved.</p>
+    <p className="small-text">the site is designed and developed by @Ashish Bhosale & team</p>
   </footer>
 );
+
+
 
 export default Footer;

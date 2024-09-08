@@ -1,105 +1,111 @@
+/* Container for Image and Overlay */
+.position-relative {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; /* Ensures no overflow */
+}
+
+/* Blurred Background Image */
+.position-relative::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/groto.jpeg'); /* Use the same image as background */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the background image */
+  filter: blur(2px); /* Applies blur effect */
+  z-index: 1; /* Places the blur layer beneath the content */
+}
+
+/* Main Image */
 .img-fluid {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .position-relative {
-    position: relative;
-    width: 100%; /* Ensure it takes up the full width */
-  }
-  
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px; /* Optional: limit height */
+  visibility: hidden; /* Hide the image as it's used in the blur */
+}
+
+/* Text Overlay Styles */
+.text-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 90%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 2; /* Ensures text is above the blur */
+}
+
+/* Title Styles */
+.title {
+  position: absolute;
+  top: 20px;
+  width: 90%;
+  left: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  z-index: 2; /* Ensures text is above the blur */
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 768px) {
   .text-overlay {
-    position: absolute;
-    bottom: 10%; /* Position text near the bottom */
-    left: 5%; /* Position text from the left */
-    width: 90%; /* Adjust width to fit text within image */
-    color: white; /* Adjust text color as needed */
-    text-align: center;
-    padding: 20px;
-    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for readability */
-    border-radius: 10px; /* Optional: rounds the corners of the text background */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    bottom: 5%;
+    left: 2%;
+    width: 96%;
+    padding: 15px;
   }
-  
-  /* Responsive text sizes */
+
   .event-title {
-    font-size: 2.5rem; /* Default size */
-    margin-bottom: 10px;
-    position: absolute;
-    top: 1%; /* Position text near the bottom */
-    left: 5%; /* Position text from the left */
-    width: 90%; /* Adjust width to fit text within image */
-    color: white; /* Adjust text color as needed */
-    text-align: center;
-    padding: 20px;
-    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for readability */
-    border-radius: 10px; /* Optional: rounds the corners of the text background */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    font-size: 2rem;
   }
-  
+
   .event-subtitle {
-    font-size: 1.5rem; /* Default size */
-    margin-bottom: 10px;
+    font-size: 1.25rem;
   }
-  
+
   .event-description {
-    font-size: 1rem; /* Default size */
-    margin-bottom: 10px;
+    font-size: 0.9rem;
   }
-  
+
   .event-date {
-    font-size: 1.25rem; /* Default size */
+    font-size: 1rem;
   }
-  
-  /* Media Queries for Mobile Devices */
-  @media (max-width: 768px) {
-    .text-overlay {
-      bottom: 5%; /* Adjust position for smaller screens */
-      left: 2%; /* Adjust position for smaller screens */
-      width: 96%; /* Increase width for smaller screens */
-      padding: 15px; /* Reduce padding for smaller screens */
-    }
-    
-    .event-title {
-      font-size: 2rem; /* Adjust size for smaller screens */
-    }
-    
-    .event-subtitle {
-      font-size: 1.25rem; /* Adjust size for smaller screens */
-    }
-    
-    .event-description {
-      font-size: 0.9rem; /* Adjust size for smaller screens */
-    }
-    
-    .event-date {
-      font-size: 1rem; /* Adjust size for smaller screens */
-    }
+}
+
+/* Further Responsive Adjustments for Small Screens */
+@media (max-width: 480px) {
+  .text-overlay {
+    bottom: 2%;
+    left: 1%;
+    width: 98%;
+    padding: 10px;
   }
-  
-  @media (max-width: 480px) {
-    .text-overlay {
-      bottom: 2%; /* Further adjust position for very small screens */
-      left: 1%; /* Further adjust position for very small screens */
-      width: 98%; /* Maximize width for very small screens */
-      padding: 10px; /* Further reduce padding for very small screens */
-    }
-    
-    .event-title {
-      font-size: 1.75rem; /* Further adjust size for very small screens */
-    }
-    
-    .event-subtitle {
-      font-size: 1rem; /* Further adjust size for very small screens */
-    }
-    
-    .event-description {
-      font-size: 0.8rem; /* Further adjust size for very small screens */
-    }
-    
-    .event-date {
-      font-size: 0.9rem; /* Further adjust size for very small screens */
-    }
+
+  .event-title {
+    font-size: 1.75rem;
   }
-  
+
+  .event-subtitle {
+    font-size: 1rem;
+  }
+
+  .event-description {
+    font-size: 0.8rem;
+  }
+
+  .event-date {
+    font-size: 0.9rem;
+  }
+}

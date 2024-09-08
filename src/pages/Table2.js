@@ -16,9 +16,9 @@ const Table2 = () => {
   return (
     <div className='container'>
       <h1>14 Sept 2024 Masses:</h1>
-      <h6>Note: Evening 04:30 PM: Holy Mass by, Chief Priest and Preacher
-Rev. Dr. Bishop Barthol Barretto (Great Guru Swami, Nashik Catholic Diocese) <br />
-Organized by: All organizations in the parish </h6>
+      <h6>Note: Evening 04:30 PM: Holy Mass, Will be offered by Chief Priest and Preacher Rev. Dr. Bishop Barthol Barretto (Mahaguru Swami, Catholic Diocese of Nashik)
+      </h6>
+      <h6>Mass arrangements: By all organizations in the parish</h6>
       <table className="styled-table">
         <thead>
           <tr>
