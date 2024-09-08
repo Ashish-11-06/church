@@ -11,7 +11,7 @@ const ContactUs = () => {
           <h2>Our Community 2024</h2>
           <ul>
             <li><strong>Fr. Dominic Rosario-</strong>: Parish Priest</li>
-            <li><strong>Fr. Santan Rodrigues-</strong>: Assistant</li>
+            <li><strong>Fr. Santan Rodrigues-</strong>: Assistant Parish Priest</li>
             <li><strong>Fr. Francis Ohol-</strong>: Principal</li>
             <li><strong>Br. Maxwell Kharja-</strong>: Hostel incharge</li>
           </ul>
@@ -22,10 +22,10 @@ const ContactUs = () => {
           A. nagar   Pin : 413718
         </p>
         <p>
-          <strong>Phone:</strong> [Update Phone Number if applicable]
+          <strong>Phone:</strong> 9604289148 (Parish Priest)
         </p>
         <p>
-          <strong>Email:</strong> <a href="mailto:[UpdateEmail@example.com]">[UpdateEmail@example.com]</a>
+          <strong>Email:</strong> <a href="mailto:[Dominicrosario-lj8nd@.com]">Dominicrosario-lj8nd@.com</a>
         </p>
       </div>
       <div className='map'>
