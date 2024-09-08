@@ -10,10 +10,10 @@ const ContactUs = () => {
         <section className='staff'>
           <h2>Our Community 2024</h2>
           <ul>
-            <li><strong> Fr. Dominic Rosario</strong> - Parish Priest -</li>
-            <li><strong>Fr. Santan Rodrigues </strong> - Assistant -</li>
-            <li><strong> Fr. Francis Ohol</strong> - Principal -</li>
-            <li><strong>Br. Maxwell Kharja</strong> - Hostel incharge -</li>
+            <li><strong>Fr. Dominic Rosario-</strong>: Parish Priest</li>
+            <li><strong>Fr. Santan Rodrigues-</strong>: Assistant</li>
+            <li><strong>Fr. Francis Ohol-</strong>: Principal</li>
+            <li><strong>Br. Maxwell Kharja-</strong>: Hostel incharge</li>
           </ul>
         </section>
         <p>

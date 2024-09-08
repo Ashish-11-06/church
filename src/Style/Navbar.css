@@ -1,28 +1,43 @@
+/* Sticky Navbar at the top */
 .navbar-custom {
-  background-color: rgba(138, 197, 215, 0.411) ; /* Dark background color */
-  }
+  background-color: #f8f9fa; /* Neutral background color */
+  position: sticky; /* Ensures the navbar sticks to the top */
+  top: 0; /* Positions the navbar at the top */
+  width: 100%; /* Ensures the navbar spans the full width */
+  z-index: 1000; /* Ensures the navbar is above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+  padding: 0; /* Remove padding */
+}
+
+/* Remove padding from container inside the navbar */
+.navbar-custom .container {
+  padding: 0; /* Remove container padding */
+}
+
+/* Remove padding from navbar items */
+.navbar-custom .navbar-nav {
+  margin: 0; /* Remove margin */
+}
+
+/* Remove padding from individual nav links */
+.navbar-custom .nav-link {
+  padding: 0; /* Remove padding around links */
+  font-size: 0.75rem; /* Adjust font size as needed */
+}
+
+/* Remove margin from nav links */
+.navbar-custom .nav-link {
+  margin: 0; /* Remove margin */
+}
+/* Add left padding to the title */
+.navbar-custom .navbar-brand {
+  padding-left: 1rem; /* Adjust the value as needed */
+}
 
 
-  .navbar-custom {
-    background-color: #f8f9fa; /* Example background color */
+/* Optional: Ensure that container and navbar items adjust correctly on smaller screens */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    text-align: center;
   }
-  
-  .nav-link {
-    color: #000; /* Example text color */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* Example hover color */
-  }
-  
-  body-tertiary {
-    /* Custom styles for body-tertiary class */
-  }
-  
-  /* Optional: Ensure that container and navbar items adjust correctly on smaller screens */
-  @media (max-width: 767.98px) {
-    .navbar-collapse {
-      text-align: center;
-    }
-  }
-  
+}

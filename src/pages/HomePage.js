@@ -8,6 +8,7 @@ import Social from '../components/Social';
 
 const HomePage = () => (
   <main className='home'>
+    
     <div className="marquee">
       <p>Festival is on 14 September 2024.    सण १४ सप्टेंबर २०२४ रोजी आहे</p>
     </div>
@@ -19,7 +20,7 @@ const HomePage = () => (
       />
       <div className="text-white align-items-center">
         <h2>St. Teresa Church Harigaon</h2>
-        <p>जो माझ्या पुत्राचा सन्मान करील, त्यांच्या ईच्छा मी पूर्ण करील.</p>
+        <p>"जे माझा सन्मान करतील, त्यांच्या ईच्छा मी पूर्ण करीन."</p>
       </div>
     </div>
 

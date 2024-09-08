@@ -11,6 +11,8 @@ const Table2 = () => {
     { time: '07:00 PM', event: 'Prayer For Health', celebrant: 'Rev. Fr. Nelsan Parera', From: 'Ghulewadi' },
     { time: '09:00 PM', event: 'Bhajan Sandhya', celebrant: 'Harigaon Bhajan Group', From: 'Harigaon' },
     { time: '12:00 AM', event: 'Holy Mass', celebrant: 'Rev. Fr. Mukti Prasad', From: 'Ashoknagar' },
+    { time: '05:00 AM (next day)', event: 'Holy Mass', celebrant: 'Regional Priests', From: 'St. Teresa Church Harigaon' },
+    { time: '07:30 AM (next day)', event: 'Holy Mass', celebrant: 'Rev. Fr. Bhausaheb Sansare', From: 'Pepal Seminary, Pune' },
   ];
 
   return (
