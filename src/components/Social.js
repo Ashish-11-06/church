@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 import '../Style/Social.css'; // Make sure this path is correct
 
 const Social = () => (
@@ -13,9 +13,9 @@ const Social = () => (
           href="https://www.youtube.com/@DominicRosario-lj8nd" // Replace with your actual YouTube channel URL
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary"
+          className="btn btn-primary d-flex align-items-center justify-content-center"
         >
-          Watch on YouTube
+          <FaYoutube style={{ marginRight: '8px' }} /> Watch on YouTube
         </a>
       </div>
 

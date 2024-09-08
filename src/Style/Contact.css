@@ -1,3 +1,5 @@
+/* Contact.css */
+
 .contact {
     display: flex;
     flex-direction: row; /* Default to horizontal layout */
@@ -13,6 +15,24 @@
     flex: 1;
   }
   
+  /* Responsive text size */
+  .contact-info h2 {
+    font-size: 2rem; /* Base font size for headings */
+    color: #800000;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem; /* Base font size for paragraphs */
+    line-height: 1.5; /* Line height for better readability */
+  }
+  
+  .contact-info ul {
+    font-size: 1rem; /* Font size for list items */
+    line-height: 1.5; /* Line height for better readability */
+  }
+  
+  /* Media queries for different screen sizes */
   @media (max-width: 768px) {
     .contact {
       flex-direction: column; /* Stack items vertically on smaller screens */
@@ -20,6 +40,26 @@
   
     .map {
       margin-top: 20px; /* Space above the map when stacked */
+    }
+  
+    .contact-info h2 {
+      font-size: 1.5rem; /* Smaller font size on smaller screens */
+    }
+  
+    .contact-info p,
+    .contact-info ul {
+      font-size: 0.875rem; /* Smaller font size on smaller screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .contact-info h2 {
+      font-size: 2.5rem; /* Larger font size on larger screens */
+    }
+  
+    .contact-info p,
+    .contact-info ul {
+      font-size: 1.125rem; /* Larger font size on larger screens */
     }
   }
   
