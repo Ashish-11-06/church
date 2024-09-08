@@ -1,16 +1,20 @@
 import React from 'react';
 import '../Style/Head2.css'; // Ensure this path is correct for your project
-import saintImage from '../Assets/churchimg.jpeg'; // Replace with your actual image path
+import groto from '../Assets/groto.jpeg'; // Replace with your actual image path
 
 const QuoteSection = () => {
   return (
     <div className="quote-section">
-      <img src={saintImage} alt="Saint" className="saint-image" />
-      <blockquote className="quote-text">
-        “Take Lord, and receive all my liberty, my memory, my understanding, and my entire will, all I have and call my own. 
-        You have given all to me. To you, Lord, I return it. Everything is yours; do with it what you will. 
-        Give me only your love and your grace, that is enough for me.”
-      </blockquote>
+     
+      {/* <blockquote className="quote-text">
+      "Hail Mary, full of grace, the Lord is with thee;
+blessed art thou among women,
+and blessed is the fruit of thy womb, Jesus."      </blockquote> */}
+<img src={groto} alt="Saint" className="saint-image" />
+
+<blockquote className="quote-text">
+      "Holy Mary, Mother of God,
+pray for us sinners, now and at the hour of our death. Amen."      </blockquote>
     </div>
   );
 };

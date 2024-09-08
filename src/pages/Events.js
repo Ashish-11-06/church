@@ -1,12 +1,12 @@
 import React from 'react';
 import '../Style/Events.css'; // Adjust the path as needed
 
-import groto from '../Assets/groto.jpeg';
+import ChurchImg from '../Assets/churchimg.jpeg';
 
 const Events = () => (
   <div className="position-relative">
     <img
-      src={groto}
+      src={ChurchImg}
       alt="Groto"
       className="img-fluid"
     />

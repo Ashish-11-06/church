@@ -6,6 +6,17 @@ const ContactUs = () => {
       <div style={{ flex: 1, marginRight: '20px' }}>
         <h2 style={{ color: '#800000', marginBottom: '10px' }}>Contact us</h2>
         <p style={{ fontWeight: 'bold' }}>St. Teresa Church Parish Priest</p>
+        <section className='staff'>
+        <h2>Meet Our Community 2024</h2>
+         
+
+        <ul>
+          <li><strong> Fr. Dominic Rosario</strong> - Parish Priest -</li>
+          <li><strong>Fr. Santan Rodrigues </strong> - Assistant -</li>
+          <li><strong> Fr. Francis Ohol</strong> - Principal -</li>
+          <li><strong>Br. Maxwell Kharja</strong> - Hostel incharge -</li>
+        </ul>
+      </section>
         <p>
           <strong>Address:</strong> St. Teresa Church<br />
           Harigaon, Shrirampur<br />
